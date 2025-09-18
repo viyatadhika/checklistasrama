@@ -27,44 +27,56 @@
 
 
 
+<!-- Informasi Dasar -->
 <div class="bg-white rounded-2xl shadow-md p-6 mb-6">
   <h2 class="text-lg font-semibold mb-4 flex items-center gap-2 text-gray-800">
     <i data-lucide="info" class="w-5 h-5 text-blue-500"></i>
     Informasi Dasar
   </h2>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    
+    <!-- Tanggal -->
     <div>
       <label class="flex items-center text-sm font-medium text-gray-600 mb-1">
         <i data-lucide="calendar" class="w-4 h-4 text-blue-500 mr-1"></i> Tanggal
       </label>
       <input type="date" class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-blue-400">
     </div>
+    
+    <!-- Nama Petugas -->
     <div>
       <label class="flex items-center text-sm font-medium text-gray-600 mb-1">
         <i data-lucide="user" class="w-4 h-4 text-blue-500 mr-1"></i> Nama Petugas
       </label>
       <input type="text" placeholder="Masukkan nama petugas" class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-blue-400">
     </div>
+    
+    <!-- Blok Asrama -->
     <div>
       <label class="flex items-center text-sm font-medium text-gray-600 mb-1">
         <i data-lucide="building-2" class="w-4 h-4 text-blue-500 mr-1"></i> Blok Asrama
       </label>
       <select class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-blue-400">
+        <option selected disabled>Pilih Asrama</option>
         <option>Candra 1</option>
         <option>Candra 2</option>
         <option>Sari</option>
       </select>
     </div>
+    
+    <!-- Lantai -->
     <div>
       <label class="flex items-center text-sm font-medium text-gray-600 mb-1">
         <i data-lucide="layers" class="w-4 h-4 text-blue-500 mr-1"></i> Lantai
       </label>
       <select class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-blue-400">
+        <option selected disabled>Pilih Lantai</option>
         <option>Lantai 1</option>
         <option>Lantai 2</option>
         <option>Lantai 3</option>
       </select>
     </div>
+    
   </div>
 </div>
 
@@ -227,6 +239,7 @@
   </script>
 </body>
 </html>
+
 
 
 
