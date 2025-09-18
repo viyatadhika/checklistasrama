@@ -12,97 +12,172 @@
   </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
-  <div class="max-w-3xl mx-auto p-6">
-
+  <div class="max-w-5xl mx-auto p-6">
+    
     <!-- Header -->
-    <div class="bg-white rounded-2xl shadow p-6 text-center mb-6">
-      <h1 class="text-xl font-bold flex items-center justify-center gap-2">
-        <i data-lucide="check-square" class="w-6 h-6 text-blue-500"></i>
-        Checklist Cleaning Service
-      </h1>
-      <p class="text-sm text-gray-500">Form Kegiatan Pembersihan Asrama</p>
-    </div>
+<div class="bg-white rounded-2xl shadow p-6 text-center mb-6">
+  <h1 class="text-xl md:text-2xl lg:text-3xl font-extrabold tracking-tight text-gray-800">
+    Checklist Cleaning Service
+  </h1>
+  <p class="text-xs md:text-sm lg:text-base text-gray-500 mt-1">
+    Form Pemeriksaan & Dokumentasi Asrama
+  </p>
+</div>
 
-    <!-- Informasi Dasar -->
+
+<!-- Informasi Dasar -->
+<div class="bg-white rounded-2xl shadow-md p-6 mb-6">
+  <h2 class="text-lg font-semibold mb-4 flex items-center gap-2 text-gray-800">
+    <i data-lucide="info" class="w-5 h-5 text-blue-500"></i>
+    Informasi Dasar
+  </h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div>
+      <label class="block text-sm font-medium text-gray-600 mb-1">Tanggal</label>
+      <input type="date" class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-blue-400">
+    </div>
+    <div>
+      <label class="block text-sm font-medium text-gray-600 mb-1">Nama Petugas</label>
+      <input type="text" placeholder="Masukkan nama petugas" class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-blue-400">
+    </div>
+    <div>
+      <label class="block text-sm font-medium text-gray-600 mb-1">Blok Asrama</label>
+      <select class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-blue-400">
+        <option>Candra 1</option>
+        <option>Candra 2</option>
+        <option>Sari</option>
+      </select>
+    </div>
+    <div>
+      <label class="block text-sm font-medium text-gray-600 mb-1">Lantai</label>
+      <select class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-blue-400">
+        <option>Lantai 1</option>
+        <option>Lantai 2</option>
+        <option>Lantai 3</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- Template Checklist (2 kolom) -->
     <div class="bg-white rounded-2xl shadow p-6 mb-6">
-      <h2 class="text-base font-semibold mb-4 flex items-center gap-2">
-        <i data-lucide="user" class="w-5 h-5 text-blue-500"></i> Informasi Dasar
+      <h2 class="text-lg font-semibold mb-4 flex items-center gap-2">
+        <i data-lucide="layout" class="w-5 h-5 text-blue-500"></i> Area Koridor
       </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <input type="text" placeholder="Nama Petugas" class="border rounded-lg p-2 w-full focus:ring-2 focus:ring-blue-400">
-        <input type="date" class="border rounded-lg p-2 w-full focus:ring-2 focus:ring-blue-400">
-        <select class="border rounded-lg p-2 w-full focus:ring-2 focus:ring-blue-400">
-          <option>Blok A</option>
-          <option>Blok B</option>
-          <option>Blok C</option>
-        </select>
-        <select class="border rounded-lg p-2 w-full focus:ring-2 focus:ring-blue-400">
-          <option>Lantai 1</option>
-          <option>Lantai 2</option>
-          <option>Lantai 3</option>
-        </select>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3 checklist">
+        <label class="flex justify-between items-center border-b pb-1">
+          <span>Menyapu seluruh area koridor</span><input type="checkbox" class="w-4 h-4 accent-blue-500">
+        </label>
+        <label class="flex justify-between items-center border-b pb-1">
+          <span>Mengepel lantai koridor</span><input type="checkbox" class="w-4 h-4 accent-blue-500">
+        </label>
+        <label class="flex justify-between items-center border-b pb-1">
+          <span>Membersihkan pagar/railing</span><input type="checkbox" class="w-4 h-4 accent-blue-500">
+        </label>
+        <label class="flex justify-between items-center border-b pb-1">
+          <span>Membersihkan kaca/jendela</span><input type="checkbox" class="w-4 h-4 accent-blue-500">
+        </label>
+        <label class="flex justify-between items-center">
+          <span>Membersihkan dinding</span><input type="checkbox" class="w-4 h-4 accent-blue-500">
+        </label>
       </div>
     </div>
 
-    <!-- Area Koridor -->
+    <!-- Area Kamar -->
     <div class="bg-white rounded-2xl shadow p-6 mb-6">
-      <h2 class="text-base font-semibold mb-4 flex items-center gap-2">
-        <i data-lucide="layout" class="w-5 h-5 text-blue-500"></i> Area Lantai Koridor
+      <h2 class="text-lg font-semibold mb-4 flex items-center gap-2">
+        <i data-lucide="bed" class="w-5 h-5 text-blue-500"></i> Area Kamar
       </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
-        <label class="flex items-center gap-2"><input type="checkbox"> Menyapu seluruh area koridor</label>
-        <label class="flex items-center gap-2"><input type="checkbox"> Mengepel lantai koridor</label>
-        <label class="flex items-center gap-2"><input type="checkbox"> Membersihkan pagar/railing</label>
-        <label class="flex items-center gap-2"><input type="checkbox"> Membersihkan kaca/jendela</label>
-        <label class="flex items-center gap-2"><input type="checkbox"> Membersihkan dinding</label>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3 checklist">
+        <label class="flex justify-between items-center border-b pb-1"><span>Merapikan tempat tidur</span><input type="checkbox" class="w-4 h-4 accent-blue-500"></label>
+        <label class="flex justify-between items-center border-b pb-1"><span>Menyapu & mengepel kamar</span><input type="checkbox" class="w-4 h-4 accent-blue-500"></label>
+        <label class="flex justify-between items-center border-b pb-1"><span>Membersihkan meja & kursi</span><input type="checkbox" class="w-4 h-4 accent-blue-500"></label>
+        <label class="flex justify-between items-center"><span>Membersihkan jendela kamar</span><input type="checkbox" class="w-4 h-4 accent-blue-500"></label>
       </div>
     </div>
 
-    <!-- Upload Foto -->
+    <!-- Area Kamar Mandi -->
     <div class="bg-white rounded-2xl shadow p-6 mb-6">
-      <h2 class="text-base font-semibold mb-4 flex items-center gap-2">
-        <i data-lucide="image" class="w-5 h-5 text-blue-500"></i> Upload Dokumentasi
+      <h2 class="text-lg font-semibold mb-4 flex items-center gap-2">
+        <i data-lucide="shower-head" class="w-5 h-5 text-blue-500"></i> Area Kamar Mandi
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3 checklist">
+        <label class="flex justify-between items-center border-b pb-1"><span>Membersihkan lantai kamar mandi</span><input type="checkbox" class="w-4 h-4 accent-blue-500"></label>
+        <label class="flex justify-between items-center border-b pb-1"><span>Membersihkan toilet</span><input type="checkbox" class="w-4 h-4 accent-blue-500"></label>
+        <label class="flex justify-between items-center border-b pb-1"><span>Membersihkan wastafel</span><input type="checkbox" class="w-4 h-4 accent-blue-500"></label>
+        <label class="flex justify-between items-center"><span>Mengganti handuk/alat mandi</span><input type="checkbox" class="w-4 h-4 accent-blue-500"></label>
+      </div>
+    </div>
+
+    <!-- Amenities & Perlengkapan -->
+    <div class="bg-white rounded-2xl shadow p-6 mb-6">
+      <h2 class="text-lg font-semibold mb-4 flex items-center gap-2">
+        <i data-lucide="package" class="w-5 h-5 text-blue-500"></i> Amenities & Perlengkapan
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3 checklist">
+        <label class="flex justify-between items-center border-b pb-1"><span>Cek sabun/shampoo</span><input type="checkbox" class="w-4 h-4 accent-blue-500"></label>
+        <label class="flex justify-between items-center border-b pb-1"><span>Cek handuk & keset</span><input type="checkbox" class="w-4 h-4 accent-blue-500"></label>
+        <label class="flex justify-between items-center border-b pb-1"><span>Cek perlengkapan tidur</span><input type="checkbox" class="w-4 h-4 accent-blue-500"></label>
+        <label class="flex justify-between items-center"><span>Cek peralatan listrik (lampu, stop kontak)</span><input type="checkbox" class="w-4 h-4 accent-blue-500"></label>
+      </div>
+    </div>
+
+    <!-- Final Check -->
+    <div class="bg-white rounded-2xl shadow p-6 mb-6">
+      <h2 class="text-lg font-semibold mb-4 flex items-center gap-2">
+        <i data-lucide="check-circle" class="w-5 h-5 text-blue-500"></i> Final Check
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3 checklist">
+        <label class="flex justify-between items-center border-b pb-1"><span>Pastikan semua area bersih & rapi</span><input type="checkbox" class="w-4 h-4 accent-blue-500"></label>
+        <label class="flex justify-between items-center border-b pb-1"><span>Cek ventilasi & sirkulasi udara</span><input type="checkbox" class="w-4 h-4 accent-blue-500"></label>
+        <label class="flex justify-between items-center border-b pb-1"><span>Pastikan akses jalan tidak terhalang</span><input type="checkbox" class="w-4 h-4 accent-blue-500"></label>
+        <label class="flex justify-between items-center"><span>Dokumentasi sudah lengkap</span><input type="checkbox" class="w-4 h-4 accent-blue-500"></label>
+      </div>
+    </div>
+
+	<!-- Upload Foto -->
+    <div class="bg-white rounded-2xl shadow p-6 mb-6">
+      <h2 class="text-lg font-semibold mb-4 flex items-center gap-2">
+        <i data-lucide="image" class="w-5 h-5 text-blue-500"></i> Upload Foto Dokumentasi
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <!-- Foto Pekerjaan -->
         <label class="border-2 border-dashed border-gray-300 rounded-xl flex flex-col items-center justify-center p-6 cursor-pointer hover:border-blue-400 transition">
           <i data-lucide="upload" class="w-6 h-6 text-gray-400 mb-2"></i>
-          <span class="text-sm text-gray-500">Foto Pekerjaan</span>
+          <span class="text-sm font-medium text-gray-700">Foto Pekerjaan</span>
           <input type="file" class="hidden">
         </label>
+        <!-- Foto Kerusakan -->
         <label class="border-2 border-dashed border-gray-300 rounded-xl flex flex-col items-center justify-center p-6 cursor-pointer hover:border-blue-400 transition">
           <i data-lucide="upload" class="w-6 h-6 text-gray-400 mb-2"></i>
-          <span class="text-sm text-gray-500">Foto Kerusakan</span>
+          <span class="text-sm font-medium text-gray-700">Foto Kerusakan</span>
           <input type="file" class="hidden">
         </label>
+        <!-- Foto Pelayanan -->
         <label class="border-2 border-dashed border-gray-300 rounded-xl flex flex-col items-center justify-center p-6 cursor-pointer hover:border-blue-400 transition">
           <i data-lucide="upload" class="w-6 h-6 text-gray-400 mb-2"></i>
-          <span class="text-sm text-gray-500">Foto Pelayanan</span>
+          <span class="text-sm font-medium text-gray-700">Foto Pelayanan</span>
           <input type="file" class="hidden">
         </label>
       </div>
     </div>
 
-    <!-- Catatan Khusus -->
-    <div class="bg-white rounded-2xl shadow p-6 mb-6">
-      <h2 class="text-base font-semibold mb-4 flex items-center gap-2">
-        <i data-lucide="alert-circle" class="w-5 h-5 text-blue-500"></i>
-        Catatan Khusus / Kendala
-      </h2>
-      <textarea rows="4" placeholder="Tuliskan kendala atau catatan khusus di sini..." 
-        class="border rounded-lg p-3 w-full focus:ring-2 focus:ring-blue-400"></textarea>
-    </div>
+<!-- Catatan Khusus / Kendala -->
+<div class="bg-white rounded-2xl shadow p-6 mb-6">
+  <h2 class="text-lg font-semibold mb-4 flex items-center gap-2">
+    <i data-lucide="alert-circle" class="w-5 h-5 text-blue-500"></i>
+    Catatan Khusus / Kendala yang Ditemui
+  </h2>
+  <textarea rows="4" placeholder="Tuliskan kendala atau catatan khusus di sini..." 
+    class="border rounded-lg p-3 w-full focus:ring-2 focus:ring-blue-400"></textarea>
+</div>
 
-    <!-- Catatan Umum -->
-    <div class="bg-white rounded-2xl shadow p-6 mb-6">
-      <h2 class="text-base font-semibold mb-4 flex items-center gap-2">
-        <i data-lucide="edit-3" class="w-5 h-5 text-blue-500"></i> Catatan Umum
-      </h2>
-      <textarea rows="4" placeholder="Tambahkan catatan di sini..." 
-        class="border rounded-lg p-3 w-full focus:ring-2 focus:ring-blue-400"></textarea>
-    </div>
+
 
     <!-- Tombol -->
-    <div class="flex justify-between mb-6">
+    <div class="flex justify-between">
       <button class="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg font-medium">Reset Form</button>
       <button class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 font-medium">Simpan Checklist</button>
     </div>
@@ -118,6 +193,7 @@
       </div>
       <p id="progress-text" class="text-xs text-gray-500 mt-1">0% Complete</p>
     </div>
+    
   </div>
 
   <script>
@@ -140,3 +216,5 @@
   </script>
 </body>
 </html>
+
+
